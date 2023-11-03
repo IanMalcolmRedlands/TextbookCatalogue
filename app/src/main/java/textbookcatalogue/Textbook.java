@@ -46,6 +46,10 @@ public class Textbook {
         return String.format("SKU: %d; TITLE '%s'; PRICE: $%.2f; QUANTITY: %d", getSku(), getTitle(), getPrice(), getQuantity());
     }
 
+    public String toLog() {
+        return String.format("%d;'%s';%f;%d\n", getSku(), getTitle(), getPrice(), getQuantity());
+    }
+
     public int getSku() { return sku.get(); }
     public void setSku(int sku) { this.sku.set(sku); }
     public SimpleIntegerProperty skuProperty() { return sku; }

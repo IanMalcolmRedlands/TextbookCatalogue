@@ -4,6 +4,8 @@ import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
+import javafx.scene.control.SortEvent;
+import javafx.scene.control.TableView;
 import javafx.stage.Stage;
 import javafx.fxml.FXMLLoader;
 
