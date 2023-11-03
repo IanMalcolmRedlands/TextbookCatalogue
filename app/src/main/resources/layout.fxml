@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+
+<VBox fx:id="rootBox" xmlns:fx="http://javafx.com/fxml" fx:controller="textbookcatalogue.LayoutController">
+    <Label></Label>
+    <HBox>
+        <Button fx:id="addTbButton" text="Add Textbook"></Button>
+        <Label text="   SKU: "></Label>
+        <TextField fx:id="skuAddField"></TextField>
+        <Label text=" Title: "></Label>
+        <TextField fx:id="titleAddField"></TextField>
+        <Label text=" Price: "></Label>
+        <TextField fx:id="priceAddField"></TextField>
+        <Label text=" Quantity: "></Label>
+        <TextField fx:id="quantityAddField"></TextField>
+        <Label fx:id="addErrorLabel"></Label>
+    </HBox>
+    <Label></Label>
+
+    <HBox>
+        <Button fx:id="showTbButton" text="Show Textbook"></Button>
+        <Label text="   SKU: "></Label>
+        <TextField fx:id="skuShowField"></TextField>
+    </HBox>
+    <Label fx:id="showTbLabel"></Label>
+    <Label></Label>
+
+    <HBox>
+        <Button fx:id="delTbButton" text="Remove Textbook"></Button>
+        <Label text="   SKU: "></Label>
+        <TextField fx:id="skuDelField"></TextField>
+        <Label fx:id="delTbLabel"></Label>
+    </HBox>
+    <Label></Label>
+
+    <Label text="All Textbooks:"></Label>
+    <TableView fx:id="table"></TableView>
+</VBox>
